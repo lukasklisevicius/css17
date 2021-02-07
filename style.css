@@ -1,0 +1,46 @@
+div {
+    padding: 5px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 0.3fr 1fr 3fr 0.3fr;
+    grid-template-areas: "head head head head"
+                         "side one two card"
+                         "side main main main"
+                         "foot foot foot foot";
+
+}
+
+.head {
+    grid-area: head;
+    background-color: lightseagreen;
+}
+
+.side {
+    grid-area: side;
+    background-color: lightsteelblue;
+}
+
+.card {
+    grid-area: card;
+    background-color: lightgreen;
+}
+
+.one{grid-area: one}
+
+.two{grid-area: two}
+
+.main {grid-area: main;background-color: lightsalmon;}
+
+.foot {
+    grid-area: foot;
+    background-color: lightseagreen;
+}
+
